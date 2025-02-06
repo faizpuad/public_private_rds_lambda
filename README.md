@@ -30,7 +30,7 @@
                 - rule 1:
                     - Type: All traffic
                     - Source: Custom
-                    - use default security group (allow lambda to access rds as it will also within same vpc)
+                    - use default security group
                 - rule 2:
                     - Type: PostgreSQL
                     - Port: 5432
