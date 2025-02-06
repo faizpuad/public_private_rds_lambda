@@ -1,5 +1,7 @@
 # Creating RDS Postgres and Lambda 
-- Disclaimer: Im using both default and custom VPC for the creation of RDS either public accessible or private network
+*Disclaimer: Im using both default and custom VPC for the creation of RDS either public accessible or private network*
+
+---
 
 ### Steps
 
@@ -11,6 +13,8 @@
         - 2 AZ, 2 public and 2 private subnets for each AZ
         - NAT and VPC not needed
     - finish 
+
+----
 
 - **Security Group**
     - Theory:
@@ -59,6 +63,8 @@
                     ![lambda to rds](./assets/lambda_to_rds.png)
     - finish
 
+---
+
 - **RDS Postgres**
     - if planned for private VPC, make sure to create subnet group before rds db instance
         - vpc -> use custom VPC
@@ -91,6 +97,8 @@
     ![rds overview](./assets/rds_overview.png)
     - finish
 
+---
+
 - **EC2 instance**
     - Create this instance if you planned for private vpc only 
     - launch new instance
@@ -104,6 +112,8 @@
     - example ec2 instance summary:
     ![EC2 setup summary](./assets/EC2_instance_summary.png)
     - finish
+
+---
 
 - **Lambda**
     - create new lambda instance
@@ -138,6 +148,8 @@
     - Test the lambda function. (No need for any json input. delete the template input and click test). if ok sould see "200" code
     - finish
 
+---
+
 - **DBeaver**
     - create connection
     - specify as image below in main tab
@@ -152,3 +164,5 @@
         - private key: upload the downloaded .pem key
         - test tunnel configuration -> click ok even if warning/error -> see if connected status
     - finish
+
+---
