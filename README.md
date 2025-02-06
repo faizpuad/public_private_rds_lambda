@@ -31,7 +31,7 @@
                     - Type: All traffic
                     - Source: Custom
                     - use default security group
-                - rule 2:
+                - rule 2: (this is if you want to make only your ip address can surf the postgres from internet)
                     - Type: PostgreSQL
                     - Port: 5432
                     - Source: My IP
