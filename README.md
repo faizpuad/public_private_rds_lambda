@@ -3,7 +3,7 @@
 
 ---
 
-### Steps
+## Steps
 
 - **Custom VPC**
     - Create this instance if you planned for private vpc only. By default create a new vpc will create a **default** security group too
